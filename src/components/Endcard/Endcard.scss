@@ -1,0 +1,76 @@
+.Endcard-container {
+    background-color: #393939;
+    color: white;
+    padding: 20% 1%;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.footer-inner-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+    .footer-matter {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 14px;
+        padding-top: 5%;
+    }
+
+    .footer-icons-container {
+        margin-top: 8%;
+        width: 70%;
+        display: flex;
+        height: 5vh;
+        justify-content: space-evenly;
+
+        .icon {
+            // width: 100%;
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .Endcard-container {
+        padding: 7%;
+
+        .footer-inner-container {
+
+            .footer-icons-container {
+                width: 50%;
+                margin-top: 5%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width:1024px) {
+    .Endcard-container {
+        padding: 2%;
+
+        .footer-inner-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .footer-matter {
+                margin-top: 1%;
+                padding: 0%;
+                width: 25%;
+            }
+
+            .footer-icons-container {
+                width: 25%;
+                margin: 0%;
+            }
+        }
+    }
+}

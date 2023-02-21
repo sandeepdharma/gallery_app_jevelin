@@ -1,0 +1,317 @@
+.Footer-container {
+    // border: 1px solid red;
+    background-color: #262626;
+    color: white;
+    padding: 5%;
+    padding-top: 20%;
+    font-family: montserrat;
+
+
+    .about-container {
+        text-align: start;
+        // border: 1px solid red;
+
+        .about-heading {
+            margin-bottom: 25px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .about-matter {
+            font-size: 14px;
+            line-height: 25px;
+            color: #e3e3e3;
+
+        }
+    }
+
+    .contacts-container {
+        text-align: start;
+        // border: 1px solid red;
+
+        .contact-heading {
+            margin-bottom: 25px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .each-contact-container {
+            color: #e3e3e3;
+            // border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .contact-icon {
+                width: 10%;
+                // border: 1px solid red;
+            }
+
+            .contact-matter {
+                width: 84%;
+
+            }
+        }
+    }
+
+    .recents-container {
+        color: white;
+
+        .recent-title {
+            font-size: 20px;
+            text-align: start;
+        }
+
+        .each-post-container {
+            padding-bottom: 5%;
+            padding-top: 5%;
+            border-bottom: 1px solid rgb(133, 128, 128);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .ant-badge {
+                // border: 1px solid red;
+
+                width: 24%;
+                border-radius: 50px;
+
+                .ant-badge-count {
+                    border: none;
+
+                    background-color: #294cfe;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+            }
+
+            .post-image {
+                width: 100%;
+                border-radius: 50px;
+
+            }
+
+            .post-matter-container {
+                // border: 1px solid red;
+                width: 70%;
+                text-align: start;
+
+                .post-matter {
+                    color: white;
+                    margin-bottom: 0%;
+                    font-size: 13px;
+                }
+
+                .post-heading {
+                    color: white;
+                    margin-top: 0%;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                .post-heading:hover {
+                    color: #294cfe;
+                
+                }
+            }
+
+        }
+    }
+
+    .latest-container {
+        .latest-title {
+            text-align: start;
+            font-size: 20px;
+        }
+
+        .latest-image-container {
+            display: flex;
+            flex-wrap: wrap;
+
+            .latest-each-image {
+                width: 28%;
+                margin: 2%;
+            }
+        }
+    }
+
+
+}
+
+
+@media only screen and (min-width:425px) {
+    .Footer-container {
+        padding: 10%;
+        // border: 1px solid white;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    .Footer-container {
+        .contacts-container {
+            .each-contact-container {
+                .contact-icon {
+                    width: 8%;
+                    font-size: 20px;
+                    // border: 1px solid red;
+                }
+
+                .contact-matter {
+                    width: 92%;
+                }
+            }
+        }
+
+        .recents-container {
+            .each-post-container {
+                display: flex;
+                justify-content: center;
+
+                .ant-badge {
+                    // border: 1px solid white;
+                    width: 15%;
+                    // border-radius: 100px;
+
+                    .ant-badge-count {
+                        border: none;
+                        background-color: #294cfe;
+                        position: absolute;
+                        top: 10px;
+                        right: 20px;
+                    }
+                }
+
+                .post-image {
+                    // border: 1px solid red;
+                    width: 100%;
+                    border-radius: 100px;
+
+                }
+
+                .post-matter-container {
+                    margin-left: 3%;
+                    width: 82%;
+                    .post-matter {
+                        margin-top: 0%;
+                        margin-bottom: 2%;
+                    }
+                }
+            }
+        }
+
+        .latest-container {
+            .latest-image-container {
+                display: flex;
+                flex-wrap: wrap;
+
+                .latest-each-image {
+                    width: 12%;
+                    margin: 1%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .Footer-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+
+        .about-container {
+            width: 23%;
+        }
+
+        .contacts-container {
+            width: 23%;
+
+            .each-contact-container {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .contact-icon {
+                    width: 25%;
+                    font-size: 20px;
+                }
+
+                .contact-matter {
+                    margin-top: 0%;
+                    line-height: 25px;
+                }
+            }
+
+        }
+
+        .recents-container {
+            width: 23%;
+            // border: 1px solid red;
+
+            .each-post-container {
+                justify-content: space-between;
+
+                .ant-badge {
+                    width: 35%;
+                    // border: 1px solid white;
+
+                    .ant-badge-count {
+                        left: 45px;
+                    }
+
+                    .post-image {
+                        width: 100%;
+                    }
+                }
+
+                .post-matter-container {
+                    width: 50%;
+
+                    .post-matter {
+                        line-height: 23px;
+
+                    }
+                }
+            }
+        }
+
+        .latest-container {
+            width: 23%;
+            // border: 1px solid red;
+
+            .latest-image-container {
+                .latest-each-image {
+                    width: 28%;
+                    margin: 2%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .Footer-container {
+        .contacts-container{
+            .each-contact-container{
+                .contact-icon{
+                    width: 16%;
+                }
+            }
+        }
+        .recents-container {
+            .each-post-container {
+                .ant-badge {
+                    width: 25%;
+                    .ant-badge-count {
+                        left: 45px;
+                        border-width: 0px;
+                    }
+                }
+              
+            }
+        }
+    }
+}

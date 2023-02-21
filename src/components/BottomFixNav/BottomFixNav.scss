@@ -1,0 +1,35 @@
+.BottomFixNav-container {
+    // border-radius: 25px;
+    .visible {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: fixed;
+        top: 580px;
+        margin-left: 95.3%;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .non-visible {
+        display: none;
+    }
+
+    .bottom-nav-button {
+        background-color: white;
+        border-radius: 100px;
+        border: none;
+        height: 50px;
+
+        .bottom-nav-icon {
+            border-radius: 25px;
+            // padding: 10% 5%;
+            font-size: 40px;
+            color: #948f8f;
+            // background-color: white;
+        }
+    }
+}
+.BottomFixNav-container:hover{
+    .bottom-nav-icon{
+        color: lightblue;
+    }
+}

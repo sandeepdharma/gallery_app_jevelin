@@ -1,0 +1,41 @@
+.RightFixNav-container {
+    position: -webkit-fixed;
+    position: fixed;
+    top: 125px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    height: 54vh;
+    width: 4.4%;
+    margin-left: 95%;
+
+    .icons-container {
+        display: flex;
+        flex-direction: column;
+
+        .each-icon-container:hover {
+            background-color: rgb(244, 247, 248);
+
+            .icon {
+                color: rgb(6, 176, 233);
+            }
+        }
+
+        .each-icon-container {
+            .icon {
+                font-size: 13px;
+                width: 50%;
+                padding: 21%;
+                height: 100%;
+                border: 0.5px solid #e6e4e4;
+                border-bottom: none;
+                border-right: none;
+                border-left: none;
+                border-width: 90%;
+                color: #8a8a8a;
+            }
+        }
+
+    }
+}
